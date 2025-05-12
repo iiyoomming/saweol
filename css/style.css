@@ -10,29 +10,123 @@ a {
   text-decoration: none;
   color: #fff;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-}
+
 .saweol {
   width: 100%;
-  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: #fff;
 }
 .head {
-  width: 1280px;
+  width: 98%;
+  max-width: 1280px;
+  height: 100px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 .head h3 {
   font-size: 25px;
+  line-height: 50px;
 }
 .menu {
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: space-between;
+
   padding: 20px 0;
-  box-sizing: border-box;
 }
-.menu li {
-  padding-right: 20px;
-  box-sizing: border-box;
+.menu ul {
+  display: flex;
+  gap: 20px;
+}
+.con {
+  position: relative;
+  top: 130px;
+}
+.main_img p {
+  /* height: 700px; */
+}
+.main_img p img {
+  width: 100%;
+  object-fit: cover;
+}
+.ex {
+  max-width: 1280px;
+  width: 98%;
+  margin: 100px auto 50px;
+}
+.ex_text {
+  display: flex;
+  justify-content: space-between;
+}
+.gal {
+  max-width: 1280px;
+  width: 98%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.gal li {
+  flex: 1 1 20%;
+}
+.gal li img {
+  width: 100%;
+  object-fit: cover;
+}
+.lamp {
+  max-width: 1280px;
+  width: 98%;
+  margin: 100px auto 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.lam {
+  max-width: 1280px;
+  width: 98%;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 50px auto;
+}
+.lam li {
+  flex: 1 1 20%;
+}
+.lam li img {
+  width: 100%;
+  object-fit: cover;
+}
+.place {
+  max-width: 1280px;
+  width: 98%;
+  margin: 50px auto;
+}
+.place > div {
+  display: flex;
+  justify-content: space-between;
+}
+.place p {
+  text-align: center;
+}
+.place p img {
+  width: 80%;
+}
+footer {
+  max-width: 1280px;
+  width: 98%;
+  margin: 50px auto;
+}
+@media screen and (max-width: 640px) {
+  .head h3 {
+    text-align: center;
+  }
+  .menu {
+    justify-content: center;
+  }
+  .menu ul li:last-child {
+    display: none;
+  }
+  .menu p {
+    display: none;
+  }
 }

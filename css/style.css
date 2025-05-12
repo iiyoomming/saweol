@@ -21,6 +21,7 @@ body {
 .head {
   width: 1280px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 .head h3 {
   font-size: 25px;
